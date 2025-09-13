@@ -5,41 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dhairya Jain | Portfolio</title>
   <link rel="stylesheet" href="styling.css"/>
+  <script src="script.js"></script>
 </head>
 <body>
   <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#learning">Currently Learning</a></li>
-      <li><a href="#timeline">Timeline</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <a href="#home" class="nav-logo">Dhairya Jain</a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About Me</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#learning" class="nav-link">Currently Learning</a></li>
+      <li><a href="#timeline" class="nav-link">Timeline</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
   </nav>
 
   <section class="home-section" id="home">
-    <div class="home-text animate-fade">
+    <div class="home-text">
       <h1>Welcome to My Portfolio</h1>
       <p>Explore my skills, projects, and journey.</p>
     </div>
   </section>
 
-  <section class="about-section" id="about">
-    <div class="about-container animate-slide">
-      <div class="about-img">
-        <img src="profile.jpg" alt="Profile Photo"/>
-      </div>
+  <section class="about-section reveal" id="about">
+    <div class="about-container">
+    
       <div class="about-text">
         <h2>About Me</h2>
-        <p>Hi! I am a 2nd year student at WIT Solapur pursuing BTech in CSE. I'm an aspiring full-stack developer with a strong base in Python, C, and design using Figma. Currently exploring React and modern web development tools.</p>
+        <a href="Dhairya-CV.pdf" download class="cv-button">Download CV</a>
+        <p>Hi! I am a 2nd year student at WIT Solapur pursuing BTech in CSE. I'm an aspiring full-stack developer and an ML Engineer with a strong base in Python, C, and design using Figma. Currently exploring React , modern web development tools and Machine Learning.</p>
       </div>
     </div>
   </section>
 
-  <section class="skills-section" id="skills">
-    <h2 class="animate-fade">Skills</h2>
-    <div class="skills-grid animate-slide">
+  <section class="skills-section reveal" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
       <div class="skill">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python Logo"/>
         <p>Python</p>
@@ -60,12 +66,16 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/960px-Figma-logo.svg.png" alt="Figma Logo"/>
         <p>UI/UX (Figma)</p>
       </div>
+       <div class="skill">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL Logo"/>
+        <p>SQL</p>
+      </div>
     </div>
   </section>
 
-  <section class="learning-section" id="learning">
-    <h2 class="animate-fade">Currently Learning</h2>
-    <div class="skills-grid animate-slide">
+  <section class="learning-section reveal" id="learning">
+    <h2>Currently Learning</h2>
+    <div class="skills-grid">
       <div class="skill">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo"/>
         <p>JavaScript</p>
@@ -73,6 +83,10 @@
       <div class="skill">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png" alt="React Logo"/>
         <p>React</p>
+      </div>
+      <div class="skill">
+        <img src="https://static.vecteezy.com/system/resources/previews/013/899/429/non_2x/machine-learning-icon-artificial-intelligence-smart-machine-logo-template-illustration-free-vector.jpg" alt="Machine Learning Logo"/>
+        <p>Machine Learning</p>
       </div>
       <div class="skill">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png" alt="Graphic Design"/>
@@ -85,17 +99,31 @@
     </div>
   </section>
 
-  <section class="timeline-section" id="timeline">
-    <h2 class="animate-fade">Education and Experience</h2>
-    <div class="timeline animate-slide">
-      <div class="timeline-item red"><h3>2022-2023</h3><p>Class 12th - Science (CBSE)</p></div>
-      <div class="timeline-item yellow"><h3>2024-Present</h3><p>BTech, WIT Solapur</p></div>
-      <div class="timeline-item green"><h3>2025</h3><p>Started Web Dev and DSA</p></div>
-      <div class="timeline-item blue"><h3>2025 (Upcoming)</h3><p>Seeking Full-Stack Internship</p></div>
+ <section class="timeline-section reveal" id="timeline">
+  <h2>Education and Experience</h2>
+  <div class="timeline-grid">
+    <div class="timeline-card red left-align">
+      <h3>2022-2023</h3>
+      <p>Class 12th - Science (CBSE)</p>
     </div>
-  </section>
+    <div class="timeline-line"></div>
+    <div class="timeline-card green right-align">
+      <h3>2025</h3>
+      <p>Started Web Dev , DSA and Machine Learning</p>
+    </div>
+    <div class="timeline-card yellow left-align">
+      <h3>2024-Present</h3>
+      <p>BTech, WIT Solapur</p>
+    </div>
+    <div class="timeline-line"></div>
+    <div class="timeline-card blue right-align">
+      <h3>2025 (Upcoming)</h3>
+      <p>Seeking Full-Stack or ML Engineer Internship</p>
+    </div>
+  </div>
+</section>
 
-  <section class="contact-section" id="contact">
+  <section class="contact-section reveal" id="contact">
   <h2>Connect With Me</h2>
   <div class="contact-links">
     <a href="https://www.instagram.com/dhairya_jn_07/" target="_blank" class="btn insta">
@@ -113,9 +141,10 @@
   </div>
 </section>
 
-
   <footer>
-    <p>© 2025 Dhairya Jain • Built with 💖 HTML & CSS</p>
+    <p>© 2025 Dhairya Jain • Built with 💖 HTML, CSS & JS</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
