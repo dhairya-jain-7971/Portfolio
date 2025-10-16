@@ -113,11 +113,6 @@ section { padding: 80px 5%; }
   transition: all 0.3s ease;
 }
 
-.cv-button:hover {
-  background-color: #019875;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 .about-img img {
   width: 100%; max-width: 300px;
   border-radius: 15px;
@@ -220,8 +215,7 @@ section { padding: 80px 5%; }
 .linkedin { background: #0077b5; }
 .github { background: #333; }
 .contact-links a img { vertical-align: middle; margin-right: 8px; }
-.gmail {background-color: lightblue;
-color:white;}
+
 
 footer {
   background: #1e1e1e;
