@@ -65,4 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
     revealObserver.observe(el);
   });
 
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 5d1742364eb557e241d922132232854f358e9454
