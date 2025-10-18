@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize particles.js only if the container exists
+
   const particlesContainer = document.getElementById('particles-js');
   if (particlesContainer) {
     try {
