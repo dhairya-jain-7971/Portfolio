@@ -35,5 +35,3 @@ This website is built to showcase:
 ---
 
 
-git clone https://github.com/dhairya-jain-7971/Portfolio.git
-cd Portfolio
