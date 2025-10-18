@@ -1,68 +1,121 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize particles.js only if the container exists
+  const particlesContainer = document.getElementById('particles-js');
+  if (particlesContainer) {
+    try {
+      particlesJS('particles-js', {
+        "particles": {
+          "number": {
+            "value": 80,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#00ffff"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000000"
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#00ffff",
+            "opacity": 0.2,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 140,
+              "line_opacity": 0.5
+            },
+            "push": {
+              "particles_nb": 4
+            }
+          }
+        },
+        "retina_detect": true
+      });
+    } catch (error) {
+      console.error('Error initializing particles.js:', error);
+    }
+  }
 
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
-  const links = document.querySelectorAll('.nav-links li');
 
   hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('nav-active');
+    navLinks.classList.toggle('active');
     hamburger.classList.toggle('toggle');
   });
-  
-  links.forEach(link => {
+
+  document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
-      if (navLinks.classList.contains('nav-active')) {
-        navLinks.classList.remove('nav-active');
+      if (navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
         hamburger.classList.remove('toggle');
-      }
-    });
-  });
-
-  const nav = document.querySelector('nav');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-  });
-
-  const sections = document.querySelectorAll('section');
-  const navLi = document.querySelectorAll('nav .nav-links li a');
-
-  window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-        current = section.getAttribute('id');
-      }
-    });
-
-    navLi.forEach(a => {
-      a.classList.remove('active');
-      if (a.getAttribute('href').includes(current)) {
-        a.classList.add('active');
       }
     });
   });
 
   const revealElements = document.querySelectorAll('.reveal');
 
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
+  const revealOnScroll = () => {
+    const windowHeight = window.innerHeight;
+    revealElements.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+      const elementVisible = 100;
+
+      if (elementTop < windowHeight - elementVisible) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
       }
     });
-  }, {
-    threshold: 0.1
-  });
+  };
 
-  revealElements.forEach(el => {
-    revealObserver.observe(el);
-  });
+
 
 });

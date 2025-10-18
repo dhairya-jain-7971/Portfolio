@@ -4,19 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dhairya Jain | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styling.css"/>
-  <script src="script.js"></script>
 </head>
 <body>
+  <div id="particles-js"></div>
+  
   <nav>
-    <a href="#home" class="nav-logo">Dhairya Jain</a>
+    <a href="#home" class="nav-logo">Dhairya Jain &lt;/&gt;</a>
     <ul class="nav-links">
-      <li><a href="#home" class="nav-link">Home</a></li>
-      <li><a href="#about" class="nav-link">About Me</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#learning" class="nav-link">Currently Learning</a></li>
-      <li><a href="#timeline" class="nav-link">Timeline</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#home" class="nav-link">// Home</a></li>
+      <li><a href="#about" class="nav-link">// About</a></li>
+      <li><a href="#skills" class="nav-link">// Skills</a></li>
+      <li><a href="#timeline" class="nav-link">// Timeline</a></li>
+      <li><a href="#contact" class="nav-link">// Contact</a></li>
     </ul>
     <div class="hamburger">
       <div class="line"></div>
@@ -25,119 +29,107 @@
     </div>
   </nav>
 
-  <section class="home-section" id="home">
-    <div class="home-text">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Explore my skills, projects, and journey.</p>
+  <div class="main-container">
+    <!-- Left Column -->
+    <div class="left-column">
+      <div class="profile-section">
+        <div class="email-display">
+          <i class="fas fa-envelope"></i> dhairyajain7971@gmail.com
+        </div>
+        <h1>Dhairya Jain</h1>
+        <p class="title">Full-Stack & ML Engineer</p>
+        
+        <div class="about-container">
+          <h2><span class="comment">//</span> About Me</h2>
+          <p>Hi! I am a 2nd year student at WIT Solapur pursuing BTech in CSE. I'm an aspiring full-stack developer and an ML Engineer with a strong base in Python, C, and design using Figma. Currently exploring React, modern web development tools and Machine Learning.</p>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <section class="about-section reveal" id="about">
-    <div class="about-container">
-    
-      <div class="about-text">
-        <h2>About Me</h2>
-        <a href="Dhairya-CV.pdf" ></a>
-        <p>Hi! I am a 2nd year student at WIT Solapur pursuing BTech in CSE. I'm an aspiring full-stack developer and an ML Engineer with a strong base in Python, C, and design using Figma. Currently exploring React , modern web development tools and Machine Learning.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Right Column -->
+    <div class="right-column">
+      <section class="skills-section reveal" id="skills">
+        <h2><span class="comment">//</span> Skills</h2>
+        <div class="skills-container">
+          <div class="skills-group">
+            <span class="skills-subtitle">Core Competencies</span>
+            <div class="skills-line">
+              <span class="skill-item">Python</span>
+              <span class="skill-item">C</span>
+              <span class="skill-item">HTML</span>
+              <span class="skill-item">CSS</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">UI/UX (Figma)</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <span class="skills-subtitle">Currently Learning</span>
+            <div class="skills-line">
+              <span class="skill-item">React</span>
+              <span class="skill-item">Machine Learning</span>
+              <span class="skill-item">SQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <section class="skills-section reveal" id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="Python Logo"/>
-        <p>Python</p>
-      </div>
-      <div class="skill">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Logo"/>
-        <p>C</p>
-      </div>
-      <div class="skill">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 Logo"/>
-        <p>HTML</p>
-      </div>
-      <div class="skill">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 Logo"/>
-        <p>CSS</p>
-      </div>
-      <div class="skill">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo"/>
-        <p>JavaScript</p>
-      </div>
-      <div class="skill">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/960px-Figma-logo.svg.png" alt="Figma Logo"/>
-        <p>UI/UX (Figma)</p>
-      </div>
-      
-    
-    </div>
-  </section>
+      <section class="timeline-section reveal" id="timeline">
+        <h2><span class="comment">//</span> Timeline</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>2024 - Present</h3>
+              <p>BTech, WIT Solapur</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>2025</h3>
+              <p>Started Web Dev, DSA and Machine Learning</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>2025 (Upcoming)</h3>
+              <p>Seeking Full-Stack or ML Engineer Internship</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>2022 - 2023</h3>
+              <p>Class 12th - Science (CBSE)</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <section class="learning-section reveal" id="learning">
-    <h2>Currently Learning</h2>
-    <div class="skills-grid">
-      
-      <div class="skill">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png" alt="React Logo"/>
-        <p>React</p>
-      </div>
-      <div class="skill">
-        <img src="https://static.vecteezy.com/system/resources/previews/013/899/429/non_2x/machine-learning-icon-artificial-intelligence-smart-machine-logo-template-illustration-free-vector.jpg" alt="Machine Learning Logo"/>
-        <p>Machine Learning</p>
-      </div>
-        <div class="skill">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL Logo"/>
-        <p>SQL</p>
-      </div>
-
-    </div>
-  </section>
-
- <section class="timeline-section reveal" id="timeline">
-  <h2>Education and Experience</h2>
-  <div class="timeline-grid">
-    <div class="timeline-card red left-align">
-      <h3>2022-2023</h3>
-      <p>Class 12th - Science (CBSE)</p>
-    </div>
-    <div class="timeline-line"></div>
-    <div class="timeline-card green right-align">
-      <h3>2025</h3>
-      <p>Started Web Dev , DSA and Machine Learning</p>
-    </div>
-    <div class="timeline-card yellow left-align">
-      <h3>2024-Present</h3>
-      <p>BTech, WIT Solapur</p>
-    </div>
-    <div class="timeline-line"></div>
-    <div class="timeline-card blue right-align">
-      <h3>2025 (Upcoming)</h3>
-      <p>Seeking Full-Stack or ML Engineer Internship</p>
+      <section class="contact-section reveal" id="contact">
+        <h2><span class="comment">//</span> Get In Touch</h2>
+        <div class="contact-links">
+          <a href="https://www.instagram.com/dhairya_jn_07/" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://www.linkedin.com/in/dhairya-jain-80b278312/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/dhairya-jain-7971" target="_blank" class="social-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </section>
     </div>
   </div>
-</section>
 
-  <section class="contact-section reveal" id="contact">
-  <h2>Connect With Me</h2>
-  <div class="contact-links">
-    <a href="https://www.instagram.com/dhairya_jn_07/" target="_blank" class="btn insta">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" width="24" height="24"/>
-      Instagram
-    </a>
-    <a href="https://www.linkedin.com/in/dhairya-jain-80b278312/" target="_blank" class="btn linkedin">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" width="24" height="24"/>
-      LinkedIn
-    </a>
-    <a href="https://github.com/dhairya-jain-7971" target="_blank" class="btn github">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" width="24" height="24"/>
-      GitHub
-    </a>
-    
-  </div>
-</section>
-
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    // Check if particlesJS is loaded
+    if (typeof particlesJS === 'function') {
+      document.write('<script src="script.js"><\/script>');
+    } else {
+      console.error('Failed to load particles.js');
+      // Load a fallback script if needed
+      document.write('<script src="script.js"><\/script>');
+    }
+  </script>
 </body>
 </html>
