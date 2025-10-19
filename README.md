@@ -9,8 +9,7 @@ Welcome to the repository of my **personal portfolio website** — a space that 
 I'm a **2nd-year B.Tech CSE student at WIT Solapur** who loves exploring technology, building creative solutions, and constantly learning new skills.
 
 💡 Interests:
-- 💻 Problem Solving & DSA
-- 🔒 Cybersecurity
+- 💻 Problem Solving , Web Dev & DSA
 - 🎨 UI/UX & Design
 - 🧠 Artificial Intelligence (AI/ML)
 
